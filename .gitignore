@@ -1,2 +1,26 @@
-node_modules
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# 仮想環境
+.env
+.venv/
+venv/
+env/
+
+# 計測ログ（実行時に生成される）
+offset_log.csv
+
+# 記事画像ローカル確認用（Zennにはアップロード済みURLを使用）
+articles/images/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+
+# OS
 .DS_Store
+Thumbs.db

@@ -71,7 +71,7 @@ def offset_to_filename(dx_mm, dy_mm):
 
 
 def main():
-    output_dir = Path("samples")
+    output_dir = Path(__file__).parent / "samples"
     output_dir.mkdir(exist_ok=True)
 
     # 基準画像

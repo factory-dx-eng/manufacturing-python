@@ -34,9 +34,10 @@ MARGIN = 80         # テンプレート切り出し時の余白(px)
 SCORE_THRESHOLD = 0.85  # マッチングスコアの閾値
                         # これを下回る場合は回転ずれ等の異常として警告
 
-REFERENCE_PATH = "samples/reference.png"   # 基準画像のパス
-TEST_DIR       = "samples"                  # 検査画像ディレクトリ
-LOG_PATH       = "offset_log.csv"          # 計測ログの保存先
+_BASE_DIR      = Path(__file__).parent
+REFERENCE_PATH = str(_BASE_DIR / "samples/reference.png")   # 基準画像のパス
+TEST_DIR       = str(_BASE_DIR / "samples")                  # 検査画像ディレクトリ
+LOG_PATH       = str(_BASE_DIR / "offset_log.csv")          # 計測ログの保存先
 
 
 # ============================================================
