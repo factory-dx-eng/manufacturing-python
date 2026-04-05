@@ -407,6 +407,6 @@ angle_deg = np.degrees(np.arctan2(M[1, 0], M[0, 0]))
 
 サンプルコード・サンプル画像一式を公開しています。
 
-🔗 [github.com/factory-dx-eng/work_position_measurement](https://github.com/factory-dx-eng/work_position_measurement)
+🔗 [github.com/factory-dx-eng/manufacturing-python](https://github.com/factory-dx-eng/manufacturing-python/tree/main/work_position_measurement)
 
 ---
