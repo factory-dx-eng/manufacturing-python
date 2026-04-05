@@ -3,7 +3,7 @@ title: "搬送ライン上のワーク位置ずれをPythonで定量化する：
 emoji: "📏"
 type: "tech"
 topics: ["python", "opencv", "画像処理", "製造業", "DX"]
-published: false
+published: true
 ---
 
 # 搬送ライン上のワーク位置ずれをPythonで定量化する
