@@ -24,3 +24,6 @@ articles/images/
 # OS
 .DS_Store
 Thumbs.db
+
+# 個人タスク管理（秘書ツール）
+.secretary/
