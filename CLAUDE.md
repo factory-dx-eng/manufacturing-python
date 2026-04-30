@@ -126,6 +126,7 @@ Zenn記事URL形式：`https://zenn.dev/factory_dx_eng/articles/スラッグ名`
 | 搬送ライン上のワーク位置ずれをPythonで定量化する | `work-position-measurement.md` | 公開済み |
 | 液面残量をカメラで数値化する：輝度ヒストグラムによる定量化 | `liquid-level-detection.md` | 執筆予定 |
 | 賃貸物件情報をPythonで自動収集する：スクレイピング×GitHub Actions | `rental-scraper.md` | 執筆予定 |
+| 因果構造を地図にしてからデータを取る——製造現場でMermaid×Claudeを使ったDX調査法 | `dx-causal-map.md` | 公開済み |
 
 ---
 
