@@ -8,7 +8,7 @@ import numpy as np
 import matplotlib
 matplotlib.use('Agg')
 import matplotlib.pyplot as plt
-matplotlib.rcParams['font.family'] = 'IPAGothic'
+matplotlib.rcParams['font.family'] = 'Hiragino Sans'
 import matplotlib.patches as mpatches
 
 # ── パラメータ ────────────────────────────────────────────────
@@ -115,9 +115,10 @@ def plot_results(df, leaders_df):
             dur = max(ev['duration_sec'], 40)
             ax1.barh(y, dur, left=to_sec(ev['entry_time']),
                      height=0.6, color=color_map[m], alpha=0.9)
-            ax1.text(to_sec(ev['entry_time']) + 5, y,
-                     ev['work_id'], va='center', fontsize=7.5,
-                     color='white', fontweight='bold')
+            ax1.text(to_sec(ev['entry_time']) + dur / 2, y,
+                     ev['work_id'], va='center', ha='center', fontsize=8,
+                     color='black', fontweight='bold',
+                     bbox=dict(boxstyle='round,pad=0.2', fc='white', alpha=0.7, lw=0))
 
     ax1.set_yticks(range(len(MACHINES)))
     ax1.set_yticklabels(MACHINE_LABELS, fontsize=11)
@@ -157,6 +158,12 @@ def plot_results(df, leaders_df):
         if h:
             ax2r.text(bar.get_x() + bar.get_width() / 2, h + 0.02,
                       f'{h:.1f}分', ha='center', va='bottom', fontsize=10)
+
+    # ラベルがはみ出さないよう上限に余裕を持たせる
+    max_count = summary['count'].max()
+    max_min   = summary['total_min'].max()
+    ax2.set_ylim(0, max_count * 1.4 if max_count else 1)
+    ax2r.set_ylim(0, max_min * 1.4 if max_min else 1)
 
     ax2.set_xticks(x)
     ax2.set_xticklabels(MACHINE_LABELS, fontsize=11)
