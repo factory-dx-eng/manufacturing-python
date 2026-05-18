@@ -127,7 +127,7 @@ Zenn記事URL形式：`https://zenn.dev/factory_dx_eng/articles/スラッグ名`
 | 輪郭検出から始める外観検査 ― 外側・内側の2パターンをOpenCVで実装する | `contour-inspection.md` | 公開済み | 約91 |
 | 賃貸選びの「なんとなく」をやめた──NotionスコアリングとClaude MCPで感情を手放す方法 | `rental-decision-scoring-notion-mcp.md` | 公開済み | 約150 |
 | 因果構造を地図にしてからデータを取る——製造現場でMermaid×Claudeを使ったDX調査法 | `dx-causal-map.md` | 公開済み | 約30 |
-| 鏡面ワークを斜めから撮って射影変換で補正する：曇り面積の定量化 | `mirror-surface-homography-inspection.md` | 公開済み | — |
+| 鏡面ワークを斜めから撮って射影変換で補正する：曇り面積の定量化 | `mirror-surface-homography-inspection.md` | 公開済み | 約30 |
 | 製造ラインの停止原因を数値で特定する：チョコ停先頭ワーク判定をPandasで実装する | `choco-stop-detection.md` | 公開済み | — |
 
 ---
