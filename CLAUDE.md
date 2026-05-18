@@ -121,12 +121,14 @@ Zenn記事URL形式：`https://zenn.dev/factory_dx_eng/articles/スラッグ名`
 
 ## 記事一覧
 
-| タイトル | ファイル名 | ステータス |
-|---|---|---|
-| 搬送ライン上のワーク位置ずれをPythonで定量化する | `work-position-measurement.md` | 公開済み |
-| 液面残量をカメラで数値化する：輝度ヒストグラムによる定量化 | `liquid-level-detection.md` | 執筆予定 |
-| 賃貸物件情報をPythonで自動収集する：スクレイピング×GitHub Actions | `rental-scraper.md` | 執筆予定 |
-| 因果構造を地図にしてからデータを取る——製造現場でMermaid×Claudeを使ったDX調査法 | `dx-causal-map.md` | 公開済み |
+| タイトル | ファイル名 | ステータス | 閲覧数（参考） |
+|---|---|---|---|
+| 搬送ライン上のワーク位置ずれをPythonで定量化する | `work-position-measurement.md` | 公開済み | 約30 |
+| 輪郭検出から始める外観検査 ― 外側・内側の2パターンをOpenCVで実装する | `contour-inspection.md` | 公開済み | 約91 |
+| 賃貸選びの「なんとなく」をやめた──NotionスコアリングとClaude MCPで感情を手放す方法 | `rental-decision-scoring-notion-mcp.md` | 公開済み | 約150 |
+| 因果構造を地図にしてからデータを取る——製造現場でMermaid×Claudeを使ったDX調査法 | `dx-causal-map.md` | 公開済み | 約30 |
+| 製造ラインの停止原因を数値で特定する：チョコ停先頭ワーク判定をPandasで実装する | `choco-stop-detection.md` | 公開済み | — |
+| 液面残量をカメラで数値化する：輝度ヒストグラムによる定量化 | `liquid-level-detection.md` | 執筆予定 | — |
 
 ---
 
@@ -145,3 +147,16 @@ Zenn記事URL形式：`https://zenn.dev/factory_dx_eng/articles/スラッグ名`
 - 「現場を知っている人間が書いている」感を出す
 - 接続詞・語尾が単調にならないよう注意
 - まとめは表だけで終わらず、記事全体の主張を締める一文を添える
+
+**閲覧数の実データから得た知見（2026-05-18）**
+- タイトルのキーワードが閲覧数の天井を決める。rental（150回）はNotion/Claude MCPというトレンドの波乗り、contour（91回）は「外観検査」という実務検索ワードが効いた
+- 画像アップロードなし・GitHubリンクなしは閲覧数に直結する負因子。dx-causal-mapが30回で止まった主因
+- リード文は「〜ありませんか？」型の汎用問いかけより、具体的な会話・場面の描写から始める方が引き込める（contourの「カメラでできないですかね？」が参考モデル）
+- contourだけが「対象読者：〜」を明示しており、これが91回を支えた要因の一つと考えられる
+
+**記事制作のチェックリスト（公開前）**
+- [ ] Zennに画像をアップロードしてURLを記事に埋め込む
+- [ ] GitHubリポジトリリンクを記事末尾に追加
+- [ ] 対象読者を明示する一文をリード文またはリード直後に入れる
+- [ ] フロー図はMermaid記法で書く（Zenn対応、コードブロックより見栄えが良い）
+- [ ] `published: true` に変更してmainブランチにpush
