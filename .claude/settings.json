@@ -1,0 +1,15 @@
+{
+  "hooks": {
+    "PostToolUse": [
+      {
+        "matcher": "Bash",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "/Users/yuya.niizuma/pywork/manufacturing-python/.claude/hooks/post-push-check.sh"
+          }
+        ]
+      }
+    ]
+  }
+}
