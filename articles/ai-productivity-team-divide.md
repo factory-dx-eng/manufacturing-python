@@ -3,7 +3,7 @@ title: "AIで生産性が3倍になった私たちが、チームを置き去り
 emoji: "🏭"
 type: "idea"
 topics: ["ai", "claudecode", "組織", "dx", "製造業"]
-published: false
+published: true
 ---
 
 ## 「すぐには理解できないが、正しいことを言っているのだと思う」
