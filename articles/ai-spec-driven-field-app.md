@@ -3,7 +3,7 @@ title: "AIに渡す仕様書に、何を書いて何を書かないか——製�
 emoji: "📐"
 type: "idea"
 topics: ["ai", "claudecode", "製造業", "画像処理", "設計"]
-published: false
+published: true
 ---
 
 ## データを使える環境が整ったら、今度は入力が足りなくなった
